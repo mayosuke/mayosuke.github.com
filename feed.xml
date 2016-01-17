@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+<atom:link href='http://mayosuke.jp/' rel='self' type='application/rss+xml'/>
+<title>
+mayosuke.jp
+</title>
+<link>
+http://mayosuke.jp/
+</link>
+<description>
+This blog is awesome
+</description>
+<lastBuildDate>
+Mon, 18 Jan 2016 00:59:14 +0900
+</lastBuildDate>
+<generator>
+clj-rss
+</generator>
+<item>
+<guid>
+http://mayosuke.jp/posts/2016-01-17-host-a-static-site-on-github-pages-using-cryogen.html
+</guid>
+<link>
+http://mayosuke.jp/posts/2016-01-17-host-a-static-site-on-github-pages-using-cryogen.html
+</link>
+<title>
+cryogenでコメント付きブログを作ってgithub pagesでホストする
+</title>
+<description>
+&lt;ol&gt;&lt;li&gt;leiningenをインストールする&lt;/li&gt;&lt;li&gt;cryogen プロジェクトを作成する&lt;/li&gt;&lt;li&gt;ローカル環境で lein ring server を実行する&lt;/li&gt;&lt;li&gt;disqusアカウントを作成する&lt;/li&gt;&lt;li&gt;https://disqus.com/admin/create/ で disqus short name を取得する&lt;/li&gt;&lt;li&gt;http://cryogenweb.org/docs/configuration.html を参照して cryogen 上でdisqusを有効化する&lt;/li&gt;&lt;li&gt;https://tangrammer.github.io/posts/02-12-2014-cryogen-and-github.html を参考にしてgithubにcryogenプロジェクトと生成したブログ・サイトをアップロードする&lt;/li&gt;&lt;li&gt;github pageへのドメイン割当&lt;/li&gt;&lt;/ol&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Sun, 17 Jan 2016 00:00:00 +0900
+</pubDate>
+</item>
+<item>
+<guid>
+http://mayosuke.jp/posts/2015-07-01-practical-reading.html
+</guid>
+<link>
+http://mayosuke.jp/posts/2015-07-01-practical-reading.html
+</link>
+<title>
+読みっぱなしで終わらせない読書
+</title>
+<description>
+&lt;p&gt;ブロガーの&lt;a href='http://kasakoblog.exblog.jp/'&gt;かさこさん&lt;/a&gt;が経営コンサルタントの&lt;a href='http://www.kfujii.com/'&gt;藤井孝一さん&lt;/a&gt;の &lt;a href='http://amazon.jp/dp/4894514834/'&gt;「辞めて生きる技術」&lt;/a&gt;という本をFBで紹介されていて、面白そうだったのでAmazonで買った時に、 同じく藤井孝一さんが&lt;a href='http://amazon.jp/dp/4837982395/'&gt;「読書はアウトプットが99％」&lt;/a&gt; という本も出版されているのを見つけた。 読書は好きでいろいろ読むけど、本の内容を自分のものにできている実感が薄いし、他人に本の内容をうまく伝えるのが苦手なので、 改善するヒントが見つかるかもしれないと思いこの本を買って読んでみた。&lt;/p&gt;&lt;p&gt;「読書はアウトプットが99%」では、主に実用書を対象として、アウトプットを重視して本を読むことの大切さが述べられていた。 アウトプットの方法として、&lt;/p&gt;&lt;ul&gt;&lt;li&gt;本に書いてある事を実際にやってみること&lt;/li&gt;&lt;li&gt;読書会に参加してみる・自分で開催してみる&lt;/li&gt;&lt;li&gt;著者に感想を送る・実際に会いに行く&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;といったことまでが提案されていて、単純に文章にしたり、人に話したりするだけでない いろいろなアウトプットの仕方もあるのだと気付くことができた。&lt;/p&gt;&lt;p&gt;この本では、「本はいつでも読める」という意見について、主に、以下の点でそうではないと述べられているが、&lt;/p&gt;&lt;ul&gt;&lt;li&gt;時間が経つにつれて本の入手が難しくなること&lt;/li&gt;&lt;li&gt;本に書かれている情報が古くなること&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;自分も、本を入手はしたけど、その本に出会った時の自分のテンションが時間が経つにつれて下がっていき、 結果読まなくなってしまう、という事が過去に度々あったので、そういう意味でも「本はいつでも読める」と積ん読せずに 読みたいと思って入手した時の勢いで読んでしまう方が良いと思った。&lt;/p&gt;&lt;p&gt;ただ、読みたい本と思った本をすべて読むことは時間的に難しいので、どの本を読むか、絞り込む作業が大切で、 その具体的な方法もこの本には書いてあった。&lt;/p&gt;&lt;p&gt;ここまでこの記事を書いて、本の読み方系の本としては超古典の&lt;a href='http://amazon.jp/dp/4061592998/'&gt;「本を読む本」&lt;/a&gt;を買ったのにずーっと積読して、 結局読まずに手放してしまった事をふと思い出して、なんとはなしに「本を読む本」をググったらこんな記事があった。&lt;/p&gt;&lt;p&gt;&lt;a href='http://dain.cocolog-nifty.com/myblog/2008/12/10-462b.html'&gt;上から目線の「本を読む本」を10倍楽しく読む方法: わたしが知らないスゴ本は、きっとあなたが読んでいる&lt;/a&gt;&lt;/p&gt;&lt;p&gt;本題は「本を読む本」の書評だが、記事の後半で紹介されている&lt;a href='http://amazon.jp/dp/4894345412/'&gt;「ペナック先生の愉快な読書法」&lt;/a&gt;という本に、 「読書の権利１０ヶ条」というのがあって、それによると、本は好きに読んでいい、楽しんで読めばいい、アウトプットしなくたっていいのだという(^^; まーたしかに。本が好きか嫌いかと言われたら大好きと即答できるけど、読み方については妙に凝り固まっていたかもしれない。 積ん読は大量にあるのだから、楽しく本を読む一環として、アウトプットもしていこう。&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;おまけ&quot;&gt;&lt;/a&gt;おまけ&lt;/h2&gt;&lt;p&gt;この記事を書く際に、以下の情報を参考にしてAmazonの本のリンクを短くすることができた。&lt;/p&gt;&lt;p&gt;&lt;a href='http://qiita.com/na1412/items/9bfa9c92bd32d70ec86c'&gt;AmazonのURLは短縮できる - Qiita&lt;/a&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Wed, 01 Jul 2015 00:00:00 +0900
+</pubDate>
+</item>
+<item>
+<guid>
+http://mayosuke.jp/posts/2015-06-30-using-naked-domain-on-heroku.html
+</guid>
+<link>
+http://mayosuke.jp/posts/2015-06-30-using-naked-domain-on-heroku.html
+</link>
+<title>
+herokuでネイキッドドメインを使う
+</title>
+<description>
+&lt;p&gt;mayosuke.jpは2015年6月から2016年1月までheroku上で動かしていた。&lt;/p&gt;&lt;p&gt;herokuはアプリにネイキッドドメインの割り当てを許可していないが、 ググると割り当てる方法が幾つか見つかった。 その中で、以下のブログに書いてある、 DozensというサービスとDNS割り当てのためのherokuアプリを組み合わせる方法を試すことにした。&lt;/p&gt;&lt;p&gt;&lt;a href='http://ls1qj.hatenablog.com/entry/2014/07/06/134108'&gt;Herokuでネイキッドドメイン（ルートドメイン）を利用する方法 - LS1qJの日記&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Dozensのアカウントを取得してherokuアプリをデプロイするところまではすんなりできたが、 デプロイしたアプリはエラーでちゃんと動いていなかった。 アプリをデバッグする手間が惜しかったので、 結局、同じDozensを利用した以下のサイトの方法を採用した。&lt;/p&gt;&lt;p&gt;&lt;a href='http://m.designbits.jp/14121021/'&gt;Herokuアプリのルートドメイン設定（Dozens + VALUE DOMAIN） | memobits&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;他に参考にした情報&quot;&gt;&lt;/a&gt;他に参考にした情報&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='https://devcenter.heroku.com/articles/custom-domains'&gt;Custom Domains | Heroku Dev Center&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://devcenter.heroku.com/articles/apex-domains'&gt;The Limitations of DNS A-Records | Heroku Dev Center&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='https://dozens.jp/'&gt;DNSを自由に簡単に。Dozens（ダズンズ）&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://xoyip.hatenablog.com/entry/2014/05/03/192920'&gt;CloudFlare使ってHerokuでルートドメイン使おう - PILOG&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://qiita.com/numa08/items/d4ad9454f0baefc8c784'&gt;お名前.comを使ってHerokuのルートドメインを設定する - Qiita&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://qiita.com/Oakbow/items/8f76ca074f51fc3bd89c'&gt;Herokuでルートドメインを使用する - Qiita&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://qiita.com/Tkashiro/items/8249455477bbb5333118'&gt;Express - herokuにルートドメインを無料で設定する - Qiita&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='http://www.gehirn.jp/'&gt;GWS - Gehirn Web Services　ゲヒルンウェブサービス&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 30 Jun 2015 00:00:00 +0900
+</pubDate>
+</item>
+</channel>
+</rss>

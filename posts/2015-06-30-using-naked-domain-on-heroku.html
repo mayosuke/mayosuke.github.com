@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>mayosuke.jp</title>
+    <title>mayosuke.jp: herokuでネイキッドドメインを使う</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
           type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
-    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+    <link href="/css/screen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -27,7 +27,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li  class="active" ><a href="/index.html">Home</a></li>
+                <li ><a href="/index.html">Home</a></li>
                 <li
                 ><a href="/archives.html">Archives</a></li>
                 
@@ -53,40 +53,43 @@
 <div id="post">
     <div class="post-header">
     <div id="post-meta" class="row">
-        <div class="col-lg-6">2016/01/17</div>
+        <div class="col-lg-6">2015/06/30</div>
         
     </div>
-    <h2>cryogenでコメント付きブログを作ってgithub pagesでホストする</h2>
+    <h2>herokuでネイキッドドメインを使う</h2>
 </div>
 <div>
     
-    <ol><li>leiningenをインストールする</li><li>cryogen プロジェクトを作成する</li><li>ローカル環境で lein ring server を実行する</li><li>disqusアカウントを作成する</li><li>https://disqus.com/admin/create/ で disqus short name を取得する</li><li>http://cryogenweb.org/docs/configuration.html を参照して cryogen 上でdisqusを有効化する</li><li>https://tangrammer.github.io/posts/02-12-2014-cryogen-and-github.html を参考にしてgithubにcryogenプロジェクトと生成したブログ・サイトをアップロードする</li><li>github pageへのドメイン割当</li></ol>
+    <p>mayosuke.jpは2015年6月から2016年1月までheroku上で動かしていた。</p><p>herokuはアプリにネイキッドドメインの割り当てを許可していないが、 ググると割り当てる方法が幾つか見つかった。 その中で、以下のブログに書いてある、 DozensというサービスとDNS割り当てのためのherokuアプリを組み合わせる方法を試すことにした。</p><p><a href='http://ls1qj.hatenablog.com/entry/2014/07/06/134108'>Herokuでネイキッドドメイン（ルートドメイン）を利用する方法 - LS1qJの日記</a></p><p>Dozensのアカウントを取得してherokuアプリをデプロイするところまではすんなりできたが、 デプロイしたアプリはエラーでちゃんと動いていなかった。 アプリをデバッグする手間が惜しかったので、 結局、同じDozensを利用した以下のサイトの方法を採用した。</p><p><a href='http://m.designbits.jp/14121021/'>Herokuアプリのルートドメイン設定（Dozens + VALUE DOMAIN） | memobits</a></p><h2><a name="他に参考にした情報"></a>他に参考にした情報</h2><ul><li><a href='https://devcenter.heroku.com/articles/custom-domains'>Custom Domains | Heroku Dev Center</a></li><li><a href='https://devcenter.heroku.com/articles/apex-domains'>The Limitations of DNS A-Records | Heroku Dev Center</a></li><li><a href='https://dozens.jp/'>DNSを自由に簡単に。Dozens（ダズンズ）</a></li><li><a href='http://xoyip.hatenablog.com/entry/2014/05/03/192920'>CloudFlare使ってHerokuでルートドメイン使おう - PILOG</a></li><li><a href='http://qiita.com/numa08/items/d4ad9454f0baefc8c784'>お名前.comを使ってHerokuのルートドメインを設定する - Qiita</a></li><li><a href='http://qiita.com/Oakbow/items/8f76ca074f51fc3bd89c'>Herokuでルートドメインを使用する - Qiita</a></li><li><a href='http://qiita.com/Tkashiro/items/8249455477bbb5333118'>Express - herokuにルートドメインを無料で設定する - Qiita</a></li><li><a href='http://www.gehirn.jp/'>GWS - Gehirn Web Services　ゲヒルンウェブサービス</a></li></ul>
 </div>
 
 <div id="post-tags">
     <b>Tags: </b>
     
-    <a href="/tags/cryogen.html">cryogen</a>
-    
-    <a href="/tags/github pages.html">github pages</a>
-    
-    <a href="/tags/FJORDインターン.html">FJORDインターン</a>
+    <a href="/tags/heroku.html">heroku</a>
     
 </div>
 
 
-    
-    <div id="comments">
-        <a href="/posts/2016-01-17-host-a-static-site-on-github-pages-using-cryogen.html#disqus_thread">View Comments</a>
-    </div>
-    
-
     <div id="prev-next">
         
+        <a href="/posts/2015-07-01-practical-reading.html">&laquo; 読みっぱなしで終わらせない読書</a>
         
-        <a class="right" href="/posts/2015-07-01-practical-reading.html">読みっぱなしで終わらせない読書 &raquo;</a>
         
     </div>
+
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//mayosuke.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+
+
 </div>
 
             </div>
@@ -140,7 +143,7 @@
 </div>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="js/highlight.pack.js" type="text/javascript"></script>
+<script src="/js/highlight.pack.js" type="text/javascript"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

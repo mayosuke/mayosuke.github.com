@@ -21,6 +21,8 @@
   ga('create', 'UA-64882508-2', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://www.google-analytics.com/cx/api.js?experiment=iqA9v9DNSvSH-CQ4zzOWvg"></script>
+<script>var chosenVariation = cxApi.chooseVariation();</script>
 </head>
 <body>
 <!-- Place your content here -->
@@ -29,6 +31,17 @@
 
 <p>hello world!!!</p>
 
+<script src="jquery.min.js"></script>
+<script>
+var pageVariations = [
+function() {},
+function() {
+  document.getElementByTagName('p')[0].innerHTML='hello web test!!!';
+}];
+$(document).ready(
+  pageVariations[chosenVariation]
+);
+</script>
 </body>
 </html>
 

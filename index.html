@@ -1,146 +1,26 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
 <head>
-    <meta charset="utf-8"/>
-    <title>mayosuke.jp</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
-          type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
-    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="">
 </head>
 <body>
+<!-- Place your content here -->
+<!-- SCRIPTS -->
+<!-- Example: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
+<p>hello world!</p>
 
-<nav class="navbar navbar-default">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/index.html">mayosuke.jp</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li  class="active" ><a href="/index.html">Home</a></li>
-                <li
-                ><a href="/archives.html">Archives</a></li>
-                
-                <li
-                >
-                <a href="/about.html">About</a>
-                </li>
-                
-                <li><a href="/feed.xml">RSS</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-</nav>
-
-
-<div class="container">
-
-
-    <div class="row">
-        <div class="col-lg-9">
-            <div id="content">
-                
-<div id="post">
-    <div class="post-header">
-    <div id="post-meta" class="row">
-        <div class="col-lg-6">2016/01/25</div>
-        
-    </div>
-    <h2>怖話をひと通り使った感想と改善案</h2>
-</div>
-<div>
-    
-    <p>先週から<a href='http://256interns.com'>リモートインターン</a>をさせていただいている<a href='http://fjord.jp'>合同会社フィヨルド</a>さんが運営している"<a href='http://kowabana.jp'>怖話</a>”という世界最大の怖い話サイトを一通り使った感想と改善案です。</p><h2><a name="ブラウザでも音を鳴らしたい"></a>ブラウザでも音を鳴らしたい</h2><p>音がある方が臨場感が高まって良いと思うので、スマホアプリだけでなくブラウザからも音を鳴らしたい。HTML5にaudioタグがあるのでこれを利用すればできそう。ただ現状そうなっていないのは、なんらかの問題があるからかもしれない。</p><h2><a name="怖い話の投稿に関する事"></a>怖い話の投稿に関する事</h2><p>本文は全体で100文字以上、1行は308文字以内、みたいな制限はプレビューボタンを押す前から教えて欲しいと思った。自分がせっかちなだけかもしれないが、プレビューボタンを押した後に文字数制限の注意をされた時にちょっといらいらしてしまった。改善案としては、</p><ul><li>投稿編集画面の「本文」欄に書いてある注意書きに文字数制限の事を追記する</li><li>入力済みの文字数をチェックして、あと何文字入力可能かを表示する</li><li>制限を超えた部分の文字の色を変えて注意喚起する</li></ul><p>等が考えられる。投稿画面のjavascriptで本文欄の入力内容をチェックすれば上記のような事が実現できるのでは。</p><h2><a name="怖い話の投稿に利用する画像の利用制限"></a>怖い話の投稿に利用する画像の利用制限</h2><p>画像選択の一覧画面上で画像のタイトルに”使用不可”的な文言が入っている画像がある。これは、画像をアップロードした本人など、特定の人にしか利用をさせたくない画像だけど、システム的に利用制限ができないために苦肉の策としてユーザーが画像タイトルにこのような文言を入れていると思われる。改善案としては、画像毎に利用権限を設定できたらいいと思うが、それを実現するためには権限を管理するための情報をDB上に新設して、それを画面上に反映する必要があると思う。</p><h2><a name="androidアプリに関する事"></a>Androidアプリに関する事</h2><p>au版HTC J Butterfly(Android4.1.1)で怖話Androidアプリを動かしてみた。 アプリのルート画面でバックキーを押すと、アプリが終了せずに「アプシーマンガ」というダイアログが表示された。このダイアログ上の「アプリを終了」ボタンを押すとアプリが終了した。アプリのルート画面でバックキーを押すとアプリが終了するのが一般的なAndroidアプリ挙動なので、ダイアログを一度表示させることが不自然に感じたし、「アプシーマンガ」が怖話とどういう関係があるのか不明なので、ダイアログ上の「アプリを終了」ボタンを押すこと自体にも若干抵抗を感じた。AndroidのWeb版ではこのようなダイアログは表示されないし、バックキーの無いiOSではそもそもこのようなダイアログを表示する契機が無いので、「アプリルート画面からの離脱」については、Androidアプリ版が劣っていると思った。 アプリで怖話を利用するユーザーは、怖い話の音も聞きたい・音付きの怖い話を投稿したいと思っているユーザーである可能性が高いと思う。そういうユーザーは怖話を積極的に楽しもうとしているユーザーだと思うので、そういうユーザーの体験がWebで怖話を利用するユーザーよりも劣るのは良くないと思う。改善案としては、バックキーが押された時にダイアログを表示しないようにすること。「アプシーマンガ」に関することをアプリ内で表示する必要があるのであれば、別途表示方法を検討した方がいいと思う。</p>
-</div>
-
-<div id="post-tags">
-    <b>Tags: </b>
-    
-    <a href="/tags/怖話.html">怖話</a>
-    
-    <a href="/tags/fjordインターン.html">fjordインターン</a>
-    
-</div>
-
-
-    
-    <div id="comments">
-        <a href="/posts/2016-01-25-impressions-and-suggestions-for-kowabana.html#disqus_thread">View Comments</a>
-    </div>
-    
-
-    <div id="prev-next">
-        
-        
-        <a class="right" href="/posts/2016-01-17-host-a-static-site-on-github-pages-using-cryogen.html">cryogenでコメント付きブログを作ってgithub pagesでホストする &raquo;</a>
-        
-    </div>
-</div>
-
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div id="sidebar">
-                <h3>Links</h3>
-                <ul id="links">
-                    <li><a href="http://cryogenweb.org/docs/home.html">Cryogen Docs</a></li>
-                    <li><a href="http://carmenla.me/blog/index.html">Carmen's Blog</a></li>
-                    
-                </ul>
-                
-                <div id="recent">
-                    <h3>Recent Posts</h3>
-                    <ul>
-                        
-                        <li><a href="/posts/2016-01-25-impressions-and-suggestions-for-kowabana.html">怖話をひと通り使った感想と改善案</a></li>
-                        
-                        <li><a href="/posts/2016-01-17-host-a-static-site-on-github-pages-using-cryogen.html">cryogenでコメント付きブログを作ってgithub pagesでホストする</a></li>
-                        
-                        <li><a href="/posts/2015-07-01-practical-reading.html">読みっぱなしで終わらせない読書</a></li>
-                        
-                    </ul>
-                </div>
-                
-                
-                <div id="tags">
-                    <h3>Tags</h3>
-                    <ul>
-                        
-                        <li><a href="/tags/怖話.html">怖話</a></li>
-                        
-                        <li><a href="/tags/fjordインターン.html">fjordインターン</a></li>
-                        
-                        <li><a href="/tags/cryogen.html">cryogen</a></li>
-                        
-                        <li><a href="/tags/github pages.html">github pages</a></li>
-                        
-                        <li><a href="/tags/読書.html">読書</a></li>
-                        
-                        <li><a href="/tags/heroku.html">heroku</a></li>
-                        
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <footer>Copyright &copy;  Yosuke MIYAJIMA
-        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
-</div>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="js/highlight.pack.js" type="text/javascript"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
+

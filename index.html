@@ -33,20 +33,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script>
-var pageVariations = [
-function() {
-  console.log('original');
-  document.getElementsByTagName('p')[0].innerHTML='hello web test!!! this is original';
-},
-function() {
-  console.log('pattern1');
-  document.getElementsByTagName('p')[0].innerHTML='hello web test!!! this is pattern1';
-}];
-$(document).ready(
-  pageVariations[chosenVariation]
-);
-</script>
+<script src="./webtest.js"></script>
 </body>
 </html>
 

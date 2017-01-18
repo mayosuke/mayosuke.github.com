@@ -36,7 +36,9 @@
 <script>
 var pageVariations = [
 function() {},
+  console.log('original');
 function() {
+  console.log('pattern1');
   document.getElementByTagName('p')[0].innerHTML='hello web test!!!';
 }];
 $(document).ready(
